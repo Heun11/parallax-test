@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible", content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://static.vecteezy.com/system/resources/previews/009/267/428/non_2x/element-flower-icon-free-png.png">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/pc.css">
+    <link rel="stylesheet" href="/app.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/script.js"></script>
+    <title>Madoli</title>
+</head>
+<body>
+    <!-- <ul class="navbar">
+        <li class="navbar-item"><a class="navbar-item-a" href="/">Domov</a></li>
+        <li class="navbar-item"><a class="navbar-item-a" href="/info">O nás</a></li>
+        <li class="navbar-item"><a class="navbar-item-a" href="/kontakt">Kontakt</a></li>
+        <li class="navbar-item" style="float: right;"><a href="/"><img src="/logo-short.png" alt="logo" style="margin: auto; height: 4rem;"></a></li>
+    </ul>
+    <div class="info-image-background">
+        <div class="info-image-background-overlay">
+            <h1 class="info-image-background-overlay-text">Madoli</h1>
+        </div>
+    </div> -->
+
+    <div id="paralax">
+        <img src="https://e1.pxfuel.com/desktop-wallpaper/627/855/desktop-wallpaper-ancient-greek-greek-aesthetic.jpg" id="landscape">
+        <img src="/pilar.png" id="cabin1">
+        <img src="/pilar.png" id="cabin2">
+        <img src="https://i.pinimg.com/originals/9a/43/c2/9a43c24622da903d6b3d14432910d016.png" id="statue">
+        <h1 id="text">Kukaj</h1>
+    </div>
+    <script>
+        let bg = document.getElementById("landscape");
+        let cab1 = document.getElementById("cabin1");
+        let cab2 = document.getElementById("cabin2");
+        let text = document.getElementById("text");
+        let stat = document.getElementById("statue");
+
+        window.addEventListener('scroll', ()=>{
+            var value = window.scrollY;
+            bg.style.top = value*0.2+'px';
+            cab1.style.left = -value*0.5+'px';
+            cab2.style.left = (window.innerWidth/2)+value*0.5+'px';
+            text.style.top = -value*0.2+'px';
+            stat.style.top = window.innerHeight-value*1.2+'px';
+        });
+    </script>
+
+    <h1 class="zeus">Zeus!</h1>
+    <P class="p">
+        Sint dolore aliquip eu ut Lorem occaecat velit sint nostrud sint ea. Dolor duis tempor laborum sit ipsum excepteur sint nisi. Ea ad cillum non adipisicing in et. Elit eiusmod laboris incididunt eiusmod nisi dolore aliquip laborum velit pariatur ea amet do nisi. Veniam non enim exercitation fugiat. Eu ad culpa eu exercitation est. In ea ex nostrud irure mollit amet aute veniam sit sunt nostrud nostrud enim.
+
+Id nisi mollit sunt aute voluptate non dolor culpa. Dolor sint consectetur qui irure magna amet magna commodo adipisicing aliqua veniam. Lorem anim est et aliqua Lorem sint tempor mollit sit occaecat deserunt. Officia ipsum pariatur qui ullamco elit ad deserunt commodo labore sunt aliquip. Sit occaecat quis non ipsum labore est occaecat eiusmod.
+    </P>
+</body>
+</html>

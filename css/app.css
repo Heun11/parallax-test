@@ -1,0 +1,85 @@
+
+/* PHONE */
+@media screen and (max-width: 480px) {
+     /* css for small device */
+     /*                      */
+     #paralax{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #paralax:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to top, rgb(26, 59, 85), transparent);
+        z-index: 10000;
+    }
+
+    #paralax:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgb(26, 59, 85), transparent);
+        z-index: 10000;
+        mix-blend-mode: color;
+    }
+
+    #paralax img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        pointer-events: none;
+    }
+
+    #paralax #cabin1{
+        width: 50%;
+        left: 50%;
+    }
+
+    #paralax #cabin2{
+        width: 50%;
+    }
+
+    #paralax #statue{
+        top: 100vh;
+        width: auto;
+        left: auto;
+    }
+
+    #text{
+        position: relative;
+        margin-top: 20%;
+        color:aqua;
+        font-weight: bold;
+        font-size: 10em;
+        z-index: 1;
+    }
+
+    .zeus{
+        color: deeppink;
+        font-size: 5rem;
+        text-align: center;
+        padding: 2%;
+    }
+
+    .p{
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2.2rem;
+    }
+}
